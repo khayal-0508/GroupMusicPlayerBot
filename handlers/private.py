@@ -9,27 +9,25 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
     await message.reply_text(
-        f"""**Hey, I'm {bn} 🎵
-
-I can play music in your group's voice call. Developed by [Jason](https://t.me/ImJanindu).
-
-Add me to your group and play music freely!**
+        f"""**Salam dəyərli istifadəçi.
+Mən [𝐊𝐇𝐀𝐍](https://t.me/tag1y3v) tərəfindən yaradılmış 𝐊𝐇𝐀𝐍  𝐌𝐔𝐒𝐈𝐂  𝐁𝐎𝐓 musiqi botuyam ♥️
+Məni qrupunuza əlavə edərək adminlik verin və playerim olan @KhanMusicAssistant -ı qrupa əlavə edərək musiqilərdən zövq alın**
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url="https://github.com/Infinity-Bots/GroupMusicPlayerBot")
+                        "🛠 İrad, təklif və reklamla bağlı 🛠", url="https://t.me/tag1y3v")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/InfinityBOTs_Support"
+                        "💬 Group", url="https://t.me/KhanChat"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Infinity_BOTs"
+                        "🔊 Channel", url="https://t.me/KhanVlog"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/JEGroupMusicPlayerBot?startgroup=true"
+                        "➕ Məni qrupunuza əlavə edin ➕", url="https://t.me/Khan_MusicBot?startgroup=true"
                     )]
             ]
         ),
@@ -38,12 +36,12 @@ Add me to your group and play music freely!**
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Group Music Player Online ✅**""",
+      await message.reply_text("""**Khan Music Bot aktivdir ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Infinity_BOTs")
+                        "🔊 Channel", url="https://t.me/KhanVlog")
                 ]
             ]
         )
