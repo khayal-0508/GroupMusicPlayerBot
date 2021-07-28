@@ -34,7 +34,7 @@ async def song(client, message):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await rkp.edit("Failed to find that song.")
+        return await rkp.edit("Axtardığınız musiqi tapılmadı.")
     type = "audio"
     if type == "audio":
         opts = {
@@ -65,7 +65,7 @@ async def song(client, message):
         await rkp.edit(f"`{str(DE)}`")
         return
     except ContentTooShortError:
-        await rkp.edit("`The download content was too short.`")
+        await rkp.edit("`Bu yükləmə məzmunu çox qısadır.`")
         return
     except GeoRestrictedError:
         await rkp.edit(
@@ -73,19 +73,19 @@ async def song(client, message):
         )
         return
     except MaxDownloadsReached:
-        await rkp.edit("`Max-downloads limit has been reached.`")
+        await rkp.edit("`Maksimum yükləmə limitinə çatıldı.`")
         return
     except PostProcessingError:
-        await rkp.edit("`There was an error during post processing.`")
+        await rkp.edit("`Hazırlanma zamanı bir xəta baş verdi.`")
         return
     except UnavailableVideoError:
-        await rkp.edit("`Media is not available in the requested format.`")
+        await rkp.edit("`Fayl tələb olunan formatda mövcud deyil.`")
         return
     except XAttrMetadataError as XAME:
         await rkp.edit(f"`{XAME.code}: {XAME.msg}\n{XAME.reason}`")
         return
     except ExtractorError:
-        await rkp.edit("`There was an error during info extraction.`")
+        await rkp.edit("`Yüklənmə zamanı xəta baş verdi.`")
         return
     except Exception as e:
         await rkp.edit(f"{str(type(e)): {str(e)}}")
