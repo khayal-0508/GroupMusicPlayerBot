@@ -20,10 +20,10 @@ Məni qrupunuza əlavə edərək adminlik verin və playerim olan @KhanMusicAssi
                         "🛠 İrad, təklif və reklamla bağlı 🛠", url="https://t.me/tag1y3v")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/KhanChat"
+                        "💬 Group", url="https://t.me/tag1y3v"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/KhanVlog"
+                        "🔊 Channel", url="https://t.me/DepresyonSokagi"
                     )
                 ],[ 
                     InlineKeyboardButton(
@@ -41,7 +41,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/KhanVlog")
+                        "🔊 Channel", url="https://t.me/DepresyonSokagi")
                 ]
             ]
         )
